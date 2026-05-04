@@ -1,0 +1,378 @@
+                                     ESCALINHA DE SERVICOS - 04/05/2026 - MOT/COB                                 Pagina :         1
+Empresa : 007 RAPIDO CUIABA TRANSPORTE URBANO LTDA                                                                Emissao:04/05/2026
+Filial  : 001 RAPIDO CUIABA TRANSPORTE URBANO LTDA                                                                          11:04:34
+
+               MOTORISTA                                   COBRADOR
+CARRO    SERV. ENTRA SAIDA REGIST APELIDO                  ENTRA SAIDA REGIST APELIDO                   LOCAL MOT.      LOCAL COB.
+======================================================================================================================================
+Linha :  031 - CORUJAO CPA 4
+======================================================================================================================================
+         NOT   23:25 04:20 030238 EDERSON                                                               GAR RAPIDO
+
+======================================================================================================================================
+Linha :  032 - CORUJAO COOPHAMIL
+======================================================================================================================================
+         01B   00:30 04:20 030469 NARVAEZ                                                               GAR RAPIDO
+
+======================================================================================================================================
+Linha :  033 - CORUJAO PQ CUIABA
+======================================================================================================================================
+         01A   00:30 04:30 030443 DAVID                                                                 GAR RAPIDO
+
+======================================================================================================================================
+Linha :  034 - CORUJAO PEDRA 90
+======================================================================================================================================
+         01A   00:30 04:30 030057 PEROSO                                                                GAR RAPIDO
+
+======================================================================================================================================
+Linha :  206 - CPA 1 X CENTRO
+======================================================================================================================================
+0002169  01A   04:25 12:39 030150 MAURICIO                                                              GAR RAPIDO
+0002169  01C   12:34 21:00 030081 NELSON                                                                TER. CPA1
+0002170  02A   04:50 13:20 030039 JONES                                                                 GAR RAPIDO
+0002170  02C   16:02 00:08 030036 MAURICIO MATA                                                         TER. CPA1
+0002097  03A   05:05 11:39 030163 SILVA                                                                 GAR RAPIDO
+0002097  03C   11:34 20:06 030142 ALMEIDA GUIA                                                          TER. CPA1
+0002171  04A   05:19 11:50 030068 ISAEL                                                                 GAR RAPIDO
+0002171  04C   14:45 23:13 030152 REINALDO                                                              TER. CPA1
+0002102  05A   05:33 09:50 030372 JOSEMAR FREITAS                                                       GAR RAPIDO
+0002143  05C   14:04 18:35 030372 JOSEMAR FREITAS                                                       TER. CPA1
+0002143  06A   05:47 14:05 030022 SOARES                                                                GAR RAPIDO
+0002100  06C   16:13 23:30 030137 MELQUE SOUZA                                                          TER. CPA1
+0002086  07A   06:01 12:20 030351 PEDRO PAULO                                                           GAR RAPIDO
+0002132  08A   05:30 10:54 030257 LUIZINHO                                                              TER. CPA1
+0002102  08C   10:49 19:19 030450 VIEIRA GOMES                                                          TER. CPA1
+0002172  09A   06:43 13:05 030130 NETO                                                                  GAR RAPIDO
+0002172  09C   15:29 23:38 030045 MARIOVALDO                                                            TER. CPA1
+0002103  10A   04:45 07:43 030366 DENIS SILVA                                                           GAR RAPIDO
+0002103  10C   11:49 18:02 030366 DENIS SILVA                                                           TER. CPA1
+0002072  11A   05:07 08:11 030223 MENDES                                                                GAR RAPIDO
+0002072  11C   13:04 19:30 030223 MENDES                                                                TER. CPA1
+0002105  12A   05:28 08:25 030432 RENAN                                                                 GAR RAPIDO
+0002105  12C   13:19 19:41 030431 SILVEIRA                                                              TER. CPA1
+0002104  13A   05:56 07:57 030467 JULINHO                                                               GAR RAPIDO
+0002104  13C   12:19 18:46 030467 JULINHO                                                               TER. CPA1
+
+======================================================================================================================================
+Linha :  309 - 1 DE MARCO X CENTRO
+======================================================================================================================================
+0002175  01A   04:20 11:48 030389 MIGUEL SANTANA                                                        GAR RAPIDO
+0002175  01C   11:43 19:26 030065 CRISTIANO                                                             TER. CPA3
+0002176  02A   04:45 12:24 030244 DANIEL SANTOS                                                         GAR RAPIDO
+
+
+
+
+
+                                     ESCALINHA DE SERVICOS - 04/05/2026 - MOT/COB                                 Pagina :         2
+Empresa : 007 RAPIDO CUIABA TRANSPORTE URBANO LTDA                                                                Emissao:04/05/2026
+Filial  : 001 RAPIDO CUIABA TRANSPORTE URBANO LTDA                                                                          11:04:34
+
+               MOTORISTA                                   COBRADOR
+CARRO    SERV. ENTRA SAIDA REGIST APELIDO                  ENTRA SAIDA REGIST APELIDO                   LOCAL MOT.      LOCAL COB.
+======================================================================================================================================
+Linha :  309 - 1 DE MARCO X CENTRO
+======================================================================================================================================
+0002176  02C   12:19 19:58 030240 ALEX CASTELO                                                          TER. CPA3
+0002179  03A   05:00 09:51 030443 DAVID                                                                 GAR RAPIDO
+0002179  03B   15:24 22:45 030104 FERNANDES                                                             RES. BURITI
+0002179  03C   12:55 15:24 030092 VILSON                                                                TER. CPA3
+0002180  04A   05:14 12:42 030147 JOSEMAR                                                               GAR RAPIDO
+0002180  04C   12:37 20:14 030217 CORDEIRO                                                              TER. CPA3
+0002181  05A   05:28 12:47 030085 SANDRO                                                                GAR RAPIDO
+0002181  05C   15:51 23:23 030060 ADEMILSON                                                             TER. CPA3
+0002182  06A   05:42 13:05 030010 ALEXANDRE                                                             GAR RAPIDO
+0002182  06C   16:39 00:08 030082 ASSIS                                                                 TER. CPA3
+0002183  07A   05:56 08:31 030098 JEFERSON                                                              GAR RAPIDO
+0002184  07C   13:13 18:06 030078 JOEL                                                                  TER. CPA3
+0002177  08A   06:10 13:36 030386 VIEIRA                                                                GAR RAPIDO
+0002177  08C   13:31 21:15 030120 SILVA                                                                 TER. CPA3
+0002137  09A   06:24 11:30 030132 FREITAS                                                               GAR RAPIDO
+         09C   11:10 18:54 030189 DURVANIL                                                              GAR RAPIDO
+0002178  10A   04:40 14:30 030243 ALEXSANDRO RONDON                                                     GAR RAPIDO
+0002178  10C   14:25 22:11 030250 ANDRADE                                                               TER. CPA3
+
+======================================================================================================================================
+Linha :  311 - NOVO MATO GROSSO X CENTRO
+======================================================================================================================================
+0002106  01A   04:30 10:58 030151 PAULO ROBERTO                                                         GAR RAPIDO
+0002106  01B   10:53 15:18 030162 RODRIGUES                                                             TER. CPA3
+0002106  01C   15:13 22:58 030056 CLAUDIO                                                               TER. CPA3
+0002095  02A   04:56 14:00 030011 LAURECY                                                               GAR RAPIDO
+0002095  02B   13:55 18:05 030221 OLIVEIRA                                                              TER. CPA3
+0002124  03A   05:09 09:21 030162 RODRIGUES                                                             GAR RAPIDO
+0002124  03B   11:19 20:04 030402 CRUZ JUNIOR                                                           TER. CPA3
+0002092  04A   05:22 14:26 030020 ANTONIO LEITE                                                         GAR RAPIDO
+0002092  04B   14:21 22:21 030121 NETO                                                                  TER. CPA3
+0002127  05A   05:48 14:52 030084 JONAS                                                                 GAR RAPIDO
+0002127  05B   14:47 18:42 030111 SILVA                                                                 TER. CPA3
+0002127  05C   20:04 23:35 030111 SILVA                                                                 TER. CPA3
+
+======================================================================================================================================
+Linha :  313 - TERM CPA 3 X UNIC
+======================================================================================================================================
+0002085  01A   04:30 09:03 030469 NARVAEZ                                                               GAR RAPIDO
+0002085  01C   08:58 18:32 030125 SOUZA                                                                 TER. CPA3
+0002093  02A   04:41 11:45 030367 NASCIMENTO                                                            GAR RAPIDO
+0002093  02C   11:54 19:08 030432 RENAN                                                                 TER. CPA3
+0002123  03A   04:52 14:44 030049 RAIMUNDO                                                              GAR RAPIDO
+0002123  03C   14:39 00:15 030421 RUAN CARLOS                                                           TER. CPA3
+0002101  04A   05:03 12:32 030018 MARIA                                                                 GAR RAPIDO
+0002101  04C   12:27 19:44 030138 SILVA                                                                 TER. CPA3
+0002098  05A   05:14 13:43 030023 ANIVALDO                                                              GAR RAPIDO
+0002098  05C   13:38 22:22 030004 BENEDITO MARQUES                                                      FIEMTEC
+0002142  06A   05:25 10:31 030452 RONEI                                                                 GAR RAPIDO
+0002142  06C   10:26 20:08 030458 AUGUSTO FREIRE                                                        TER. CPA3
+0002135  07A   05:36 08:19 030156 GOMES                                                                 GAR RAPIDO
+0002135  07C   08:14 17:44 030449 JOAO ALVES                                                            TER. CPA3
+
+
+
+
+
+                                     ESCALINHA DE SERVICOS - 04/05/2026 - MOT/COB                                 Pagina :         3
+Empresa : 007 RAPIDO CUIABA TRANSPORTE URBANO LTDA                                                                Emissao:04/05/2026
+Filial  : 001 RAPIDO CUIABA TRANSPORTE URBANO LTDA                                                                          11:04:34
+
+               MOTORISTA                                   COBRADOR
+CARRO    SERV. ENTRA SAIDA REGIST APELIDO                  ENTRA SAIDA REGIST APELIDO                   LOCAL MOT.      LOCAL COB.
+======================================================================================================================================
+Linha :  313 - TERM CPA 3 X UNIC
+======================================================================================================================================
+0002094  08A   05:47 13:16 030269 ALVARENGA                                                             GAR RAPIDO
+0002094  08C   13:11 22:48 030074 ADILSON SIMAO                                                         TER. CPA3
+0002133  09A   05:58 08:41 030264 MORAIS SILVA                                                          GAR RAPIDO
+0002133  09C   08:36 18:08 030344 JEAN MOISE                                                            TER. CPA3
+0002099  10A   04:10 13:38 030108 ANTUNES                                                               GAR RAPIDO
+0002099  10C   13:33 20:49 030377 LIANE                                                                 TER. CPA3
+0002100  11A   06:31 16:10 030373 MARIANO                                                               GAR RAPIDO
+0002132  11C   16:24 23:20 030171 LUSTOSA                                                               TER. CPA3
+0002126  12A   06:42 16:41 030465 BRITO GOES                                                            GAR RAPIDO
+0002130  12C   16:36 23:47 030133 COSTA                                                                 TER. CPA3
+0002134  13A   07:24 09:47 030466 JOSE RICARDO                                                          TER. CPA3
+0002134  13C   09:42 19:20 030237 ANDRESON                                                              TER. CPA3
+
+======================================================================================================================================
+Linha :  319 - TRES BARRAS X PORTO
+======================================================================================================================================
+0002159  01A   04:20 06:50 030238 EDERSON                                                               GAR RAPIDO
+0002159  01B   06:45 14:10 030099 JORGE                                                                 ALTOS DA GLOR
+0002159  01D   14:05 21:57 030229 HAMILTON                                                              ALTOS DA GLOR
+0002165  02A   04:43 12:15 030055 GRIZOSTINHO                                                           GAR RAPIDO
+0002164  03A   05:00 07:30 030187 RODRIGO SANTOS                                                        GAR RAPIDO
+0002167  03C   12:05 19:23 030187 RODRIGO SANTOS                                                        ALTOS DA GLOR
+0002160  04A   05:15 14:50 030051 WAGNER                                                                GAR RAPIDO
+0002160  04B   14:45 22:23 030416 LIGIANO SILVA                                                         ALTOS DA GLOR
+0002161  05A   05:30 13:10 030428 RAFAEL LIMA                                                           GAR RAPIDO
+0002161  05B   13:05 20:14 030153 VELASCO                                                               ALTOS DA GLOR
+0002162  06A   05:45 13:30 030042 GILMAR RIBEIRO                                                        GAR RAPIDO
+0002162  06B   13:25 23:15 030024 ARAUJO E SILVA                                                        ALTOS DA GLOR
+0002163  07A   06:00 13:50 030253 BATISTA                                                               GAR RAPIDO
+0002163  07B   13:45 23:37 030037 IZAILTON SANTANA                                                      ALTOS DA GLOR
+0002090  08A   06:15 08:45 030461 FERNANDES                                                             GAR RAPIDO
+0002165  08C   15:15 22:51 030406 LEANDRO                                                               ALTOS DA GLOR
+0002167  09A   07:05 09:15 030454 ODAIR LIRA                                                            ALTOS DA GLOR
+         09C   15:05 19:57                                                                              ALTOS DA GLOR
+0002168  10A   07:15 09:45 030221 OLIVEIRA                                                              GAR RAPIDO
+0002166  10C   16:19 23:55 030175 LIMA                                                                  ALTOS DA GLOR
+0002164  11A   07:50 15:15 030420 GERSON BARROS                                                         GAR RAPIDO
+
+======================================================================================================================================
+Linha :  340 - ALTOS DA GLORIA X CENTRO
+======================================================================================================================================
+0002075  01A   04:30 13:34 030183 ARRUDA BARROS                                                         GAR RAPIDO
+0002075  01B   13:29 22:49 030444 MACHADO                                                               ALTOS DA GLOR
+0002184  02A   04:49 09:05 030078 JOEL                                                                  GAR RAPIDO
+0002183  02C   14:18 19:02 030098 JEFERSON                                                              ALTOS DA GLOR
+0002174  03A   05:08 14:09 030160 DA SILVA                                                              GAR RAPIDO
+0002174  03C   15:39 22:29 030236 ESPINOSA                                                              ALTOS DA GLOR
+0002173  04A   05:27 14:40 030100 MONTEIRO                                                              GAR RAPIDO
+0002173  04B   14:35 23:33 030252 ANTONIO JESUS                                                         ALTOS DA GLOR
+0002125  05A   05:46 12:50 030242 DALILA AMORIM                                                         GAR RAPIDO
+0002125  05B   12:45 21:47 030093 SERGIO                                                                ALTOS DA GLOR
+0002138  06A   06:05 15:24 030148 JORGE                                                                 GAR RAPIDO
+
+
+
+
+
+                                     ESCALINHA DE SERVICOS - 04/05/2026 - MOT/COB                                 Pagina :         4
+Empresa : 007 RAPIDO CUIABA TRANSPORTE URBANO LTDA                                                                Emissao:04/05/2026
+Filial  : 001 RAPIDO CUIABA TRANSPORTE URBANO LTDA                                                                          11:04:34
+
+               MOTORISTA                                   COBRADOR
+CARRO    SERV. ENTRA SAIDA REGIST APELIDO                  ENTRA SAIDA REGIST APELIDO                   LOCAL MOT.      LOCAL COB.
+======================================================================================================================================
+Linha :  340 - ALTOS DA GLORIA X CENTRO
+======================================================================================================================================
+0002138  06B   15:19 00:25 030192 COSTA SILVA                                                           ALTOS DA GLOR
+0002139  07A   07:22 13:56 030350 ISAQUE FERREIRA                                                       ALTOS DA GLOR
+0002139  07B   13:51 21:03 030239 MARQUES ALMEIDA                                                       ALTOS DA GLOR
+
+======================================================================================================================================
+Linha :  380 - TERM CPA1 X ESTACAO SHOPPING
+======================================================================================================================================
+0002096  01A   05:57 14:02 030103 QUEIROS                                                               GAR RAPIDO
+0002096  01B   13:57 00:05 030260 BARBOSA                                                               TER. CPA1
+0002129  02A   05:50 10:22 030263 BARCELLO                                                              TER. CPA1
+0002129  02B   10:17 19:30 030355 ALVARO JUNIOR                                                         TER. CPA1
+
+======================================================================================================================================
+Linha :  445 - PLANTAO
+======================================================================================================================================
+         P01   07:40 10:00                                                                              GAR RAPIDO
+         P02   00:30 07:30                                                                              GAR RAPIDO
+         P03   05:00 12:00                                                                              GAR RAPIDO
+         P04   05:00 12:00 030265 VITOR PAULO                                                           GAR RAPIDO
+         P05   05:00 12:00                                                                              GAR RAPIDO
+         P06   05:00 12:00                                                                              GAR RAPIDO
+         P07   05:00 12:00 030258 ARCANJO                                                               GAR RAPIDO
+         P08   06:00 13:00                                                                              GAR RAPIDO
+         P09   06:00 13:00                                                                              GAR RAPIDO
+         P10   05:00 12:00 030339 PORTO                                                                 GAR RAPIDO
+         P11   12:00 19:00                                                                              GAR RAPIDO
+         P12   12:00 19:00                                                                              GAR RAPIDO
+         P13   07:00 14:00 030101 LIMA                                                                  GAR RAPIDO
+         P14   13:00 20:00                                                                              GAR RAPIDO
+         P15   13:00 20:00 030357 BALDUINO                                                              GAR RAPIDO
+         P16   13:00 20:00 030433 ALEX FERREIRA                                                         GAR RAPIDO
+         P17   13:00 20:00 030149 PEDROSO                                                               GAR RAPIDO
+         P18   15:00 22:00                                                                              GAR RAPIDO
+         P19   15:00 22:00 030387 GUILHERME                                                             GAR RAPIDO
+         P20   15:00 22:00 030040 MARCIO FERREIRA                                                       GAR RAPIDO
+         T1_1  04:30 12:00                                                                              GAR RAPIDO
+         T1_2  04:30 12:00 030145 ZE ROBERTO                                                            GAR RAPIDO
+         T1_3  04:50 12:00                                                                              GAR RAPIDO
+         T1_4  20:00 03:00                                                                              GAR RAPIDO
+         T1_5  16:00 23:00                                                                              GAR RAPIDO
+         T1_6  12:00 19:00                                                                              TER. CPA1
+
+======================================================================================================================================
+Linha :  721 - VOL DA PATRIA X SHOP PANTANAL
+======================================================================================================================================
+0002152  01A   04:10 09:46 030092 VILSON                                                                GAR RAPIDO
+0002152  01C   15:37 23:43 030219 RONILDO                                                               PEDRA 90
+0002153  02A   04:23 12:49 030030 VALDOCI                                                               GAR RAPIDO
+0002153  02C   12:44 21:00 030459 ANDRADE                                                               PEDRA 90
+0002154  03A   04:46 13:19 030141 OLIVEIRA                                                              GAR RAPIDO
+0002154  03C   13:14 19:00 030454 ODAIR LIRA                                                            PEDRA 90
+0002155  04A   05:09 09:59 030057 PEROSO                                                                GAR RAPIDO
+
+
+
+
+
+                                     ESCALINHA DE SERVICOS - 04/05/2026 - MOT/COB                                 Pagina :         5
+Empresa : 007 RAPIDO CUIABA TRANSPORTE URBANO LTDA                                                                Emissao:04/05/2026
+Filial  : 001 RAPIDO CUIABA TRANSPORTE URBANO LTDA                                                                          11:04:34
+
+               MOTORISTA                                   COBRADOR
+CARRO    SERV. ENTRA SAIDA REGIST APELIDO                  ENTRA SAIDA REGIST APELIDO                   LOCAL MOT.      LOCAL COB.
+======================================================================================================================================
+Linha :  721 - VOL DA PATRIA X SHOP PANTANAL
+======================================================================================================================================
+0002155  04C   09:54 19:23 030419 TOLEDO                                                                SHOPPING  PAN
+0002156  05A   05:32 08:47 030430 NOGUEIRA                                                              GAR RAPIDO
+0002156  05C   14:14 19:46 030430 NOGUEIRA                                                              PEDRA 90
+0002157  06A   05:55 14:04 030146 IZAEL                                                                 GAR RAPIDO
+0002157  06C   17:14 00:30 030412 ROCHA                                                                 PEDRA 90
+0002158  07A   06:18 14:49 030053 ADILSON                                                               GAR RAPIDO
+0002158  07C   14:44 23:11 030126 VILELA                                                                PEDRA 90
+0002134  08A   05:25 07:08 030466 JOSE RICARDO                                                          GAR RAPIDO
+         08C   16:35 18:20 030461 FERNANDES                                                             SHOPPING  PAN
+0002167  09A   05:05 06:48 030454 ODAIR LIRA                                                            GAR RAPIDO
+0002157  09C   15:34 17:10 030412 ROCHA                                                                 GAR RAPIDO
+0002130  10A   05:45 07:35 030119 PAIXAO                                                                GAR RAPIDO
+
+======================================================================================================================================
+Linha :  A06 - ALIM CPA 1 X GAMALIEL
+======================================================================================================================================
+0002151  01A   04:55 14:25 030088 OSMIR                                                                 GAR RAPIDO
+0002151  01B   14:20 23:30 030462 AMORIM                                                                TER. CPA1
+0002091  02A   04:45 13:55 030135 CAMPOS                                                                GAR RAPIDO
+0002091  02B   13:50 22:20 030061 ANTONIO                                                               TER. CPA1
+0002131  03A   05:15 09:30 030048 GILNEI                                                                GAR RAPIDO
+0002131  03B   09:25 17:40 030374 KLEVERSON                                                             TER. CPA1
+0002139  04A   05:45 07:11 030350 ISAQUE FERREIRA                                                       GAR RAPIDO
+
+======================================================================================================================================
+Linha :  A07 - ALIM CPA 1 X SERRA DOURADA
+======================================================================================================================================
+0002083  01A   04:45 13:30 030102 VILSON                                                                GAR RAPIDO
+0002083  01B   13:25 23:00 030117 PINHEIRO                                                              TER. CPA1
+
+======================================================================================================================================
+Linha :  A08 - ALIM CPA 1 X 1 DE MARCO
+======================================================================================================================================
+0002073  01A   04:53 10:35 030164 COSTA                                                                 GAR RAPIDO
+0002073  01B   16:20 23:12 030474 COELHO                                                                GAR RAPIDO
+0002089  02A   05:20 10:05 030415 WHILLY LUCAS                                                          GAR RAPIDO
+0002089  02B   10:00 18:40 030031 MARI                                                                  TER. CPA1
+
+======================================================================================================================================
+Linha :  A10 - ALIM CPA 1 X SETOR 3 E 4
+======================================================================================================================================
+0002082  01A   04:55 12:34 030128 VANIA                                                                 GAR RAPIDO
+0002082  01B   12:29 19:54 030453 TEIXEIRA                                                              TER. CPA1
+0002084  02A   04:52 07:44 030410 MANOEL SOUZA                                                          GAR RAPIDO
+0002084  02B   10:53 20:59 030002 DOS SANTOS                                                            TER. CPA1
+         03A   05:46 11:48 030346 MARCIO MARTINS                                                        TER. CPA1
+0002128  03B   15:40 22:32 030206 GONZAGA                                                               TER. CPA1
+0002128  04A   06:04 08:20 030155 DE LIMA                                                               TER. CPA1
+         04B   11:41 16:34 030461 FERNANDES                                                             TER. CPA1
+         04C   16:32 23:12 030388 FRANCISCO CHARLES                                                     TER. CPA1
+
+
+
+
+
+
+
+                                     ESCALINHA DE SERVICOS - 04/05/2026 - MOT/COB                                 Pagina :         6
+Empresa : 007 RAPIDO CUIABA TRANSPORTE URBANO LTDA                                                                Emissao:04/05/2026
+Filial  : 001 RAPIDO CUIABA TRANSPORTE URBANO LTDA                                                                          11:04:35
+
+               MOTORISTA                                   COBRADOR
+CARRO    SERV. ENTRA SAIDA REGIST APELIDO                  ENTRA SAIDA REGIST APELIDO                   LOCAL MOT.      LOCAL COB.
+======================================================================================================================================
+Linha :  A15 - ALIM CPA 3 X ALTOS DA SERRA
+======================================================================================================================================
+0002140  01A   04:20 08:05 030047 DJAMES                                                                GAR RAPIDO
+         01B   11:46 12:50 030367 NASCIMENTO                                                            TER. CPA3
+0002141  01C   15:17 23:55 030107 ODAIR                                                                 TER. CPA3
+0002141  02A   04:45 12:35 030096 DARLENG                                                               GAR RAPIDO
+0002140  02B   12:35 18:50 030047 DJAMES                                                                TER. CPA3
+
+======================================================================================================================================
+Linha :  A20 - ALIM CPA 1 X VILA DA SERRA
+======================================================================================================================================
+0002147  01A   04:57 13:28 030041 DEBORA                                                                GAR RAPIDO
+0002147  01B   13:23 22:50 030464 QUEIROZ LEITE                                                         TER. CPA1
+0002077  02A   05:20 08:29 030431 SILVEIRA                                                              GAR RAPIDO
+0002077  02B   12:00 18:25 030410 MANOEL SOUZA                                                          TER. CPA1
+
+======================================================================================================================================
+Linha :  F01 - MARFRIG
+======================================================================================================================================
+0002128  01A   00:01 03:30 030155 DE LIMA                                                               GAR RAPIDO
+         01B   12:25 15:40 030388 FRANCISCO CHARLES                                                     GAR RAPIDO
+0002129  02A   00:01 03:30 030263 BARCELLO                                                              GAR RAPIDO
+         02B   11:45 16:20 030415 WHILLY LUCAS                                                          GAR RAPIDO
+0002130  03A   00:55 04:20 030119 PAIXAO                                                                GAR RAPIDO
+         03B   12:45 16:40 030164 COSTA                                                                 GAR RAPIDO
+0002131  04A   00:55 04:20 030048 GILNEI                                                                GAR RAPIDO
+         04B   13:15 14:45 030163 SILVA                                                                 GAR RAPIDO
+0002130  05B   12:25 15:40 030133 COSTA                                                                 GAR RAPIDO
+         06B   12:50 15:45 030082 ASSIS                                                                 GAR RAPIDO
+         07B   12:25 15:40 030171 LUSTOSA                                                               GAR RAPIDO
+         08B   13:35 15:40 030206 GONZAGA                                                               GAR RAPIDO
+0002132  R1_A  02:55 05:20 030257 LUIZINHO                                                              GAR RAPIDO
+0002133  R2_A  02:30 05:20 030346 MARCIO MARTINS                                                        GAR RAPIDO
+0002134  R3_A  02:30 05:20 030466 JOSE RICARDO                                                          GAR RAPIDO
+0002135  R4_A  02:05 05:20 030156 GOMES                                                                 GAR RAPIDO
+0002080  R5_A  02:55 04:30 030452 RONEI                                                                 GAR RAPIDO
+0002136  R5_B  01:50 05:15 030264 MORAIS SILVA                                                          GAR RAPIDO
+0002137  R6_A  02:45 05:20 030132 FREITAS                                                               GAR RAPIDO
+0002081  RC    23:50 00:30 030236 ESPINOSA                                                              MARFRIG | CUI
+--------------------------------------------------------------------------------------------------------------------------------------
+Total Geral :                                                                                     Motorista(s): 195  Cobrador(es): 0

@@ -300,30 +300,49 @@ function adjustTablesForDayWrapping(tabelas) {
     return minA - minB;
   });
 
-  // Ajusta horários para virada de dia
-  let lastEndMinutes = null;
-  for (let i = 0; i < sorted.length; i++) {
-    const tab = sorted[i];
-    let startMin = timeToMinutes(tab.inicio);
-    let endMin = timeToMinutes(tab.term);
-
-    if (startMin === null || endMin === null) continue;
-
-    // Se a hora de término é menor que a hora de início, virou o dia
-    if (endMin < startMin) {
-      endMin += 24 * 60; // Adiciona 24 horas
+  // Verifica se há virada de dia em qualquer tabela
+  let hasDayWrap = false;
+  for (const tab of sorted) {
+    const startMin = timeToMinutes(tab.inicio);
+    const endMin = timeToMinutes(tab.term);
+    if (startMin !== null && endMin !== null && endMin < startMin) {
+      hasDayWrap = true;
+      break;
     }
+  }
 
-    // Se a hora de início é menor que a hora anterior de término, virou o dia
-    if (lastEndMinutes !== null && startMin < lastEndMinutes) {
-      const daysToAdd = Math.floor(lastEndMinutes / (24 * 60)) + 1;
-      startMin += daysToAdd * 24 * 60;
-      endMin += daysToAdd * 24 * 60;
+  // Se há virada de dia, ajusta todas as tabelas para o mesmo contexto de dia
+  if (hasDayWrap) {
+    let dayOffset = 0;
+    let lastEndMinutes = null;
+
+    for (let i = 0; i < sorted.length; i++) {
+      const tab = sorted[i];
+      let startMin = timeToMinutes(tab.inicio);
+      let endMin = timeToMinutes(tab.term);
+
+      if (startMin === null || endMin === null) continue;
+
+      // Ajusta início baseado no offset acumulado
+      startMin += dayOffset * 24 * 60;
+
+      // Se término < início, adiciona 24h ao término
+      if (endMin < (startMin % (24 * 60))) {
+        endMin += 24 * 60;
+      }
+
+      // Se este início é antes do término anterior, ajusta para o próximo dia
+      if (lastEndMinutes !== null && startMin < lastEndMinutes) {
+        const daysToAdd = Math.ceil((lastEndMinutes - startMin) / (24 * 60));
+        startMin += daysToAdd * 24 * 60;
+        endMin += daysToAdd * 24 * 60;
+        dayOffset += daysToAdd;
+      }
+
+      tab.inicio = minutesToTime(startMin);
+      tab.term = minutesToTime(endMin);
+      lastEndMinutes = endMin;
     }
-
-    tab.inicio = minutesToTime(startMin);
-    tab.term = minutesToTime(endMin);
-    lastEndMinutes = endMin;
   }
 
   return sorted;
