@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Processador de Escalas</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 0.78rem;
+      color: #666;
+      letter-spacing: 0.08em;
+      margin-bottom: 40px;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .upload-area {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    .upload-area label {
+      display: block;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .upload-area input[type="file"] {
+      width: 100%;
+      background: #111;
+      border: 1px dashed #333;
+      color: #ccc;
+      padding: 10px 14px;
+      font-family: inherit;
+      font-size: 0.82rem;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .upload-area input[type="file"]:hover {
+      border-color: #555;
+    }
+
+    .file-status {
+      margin-top: 8px;
+      font-size: 0.72rem;
+      color: #555;
+      min-height: 16px;
+    }
+
+    .file-status.loaded { color: #4caf50; }
+    .file-status.error  { color: #f44336; }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      background: #fff;
+      color: #000;
+      border: none;
+      font-family: inherit;
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-top: 8px;
+      transition: background 0.15s, color 0.15s;
+    }
+
+    button:hover:not(:disabled) {
+      background: #ccc;
+    }
+
+    button:disabled {
+      background: #222;
+      color: #444;
+      cursor: not-allowed;
+    }
+
+    .log {
+      margin-top: 24px;
+      background: #111;
+      border: 1px solid #2a2a2a;
+      padding: 16px;
+      font-size: 0.75rem;
+      line-height: 1.8;
+      min-height: 60px;
+      color: #666;
+      white-space: pre-wrap;
+    }
+
+    .log .ok   { color: #4caf50; }
+    .log .warn { color: #ff9800; }
+    .log .err  { color: #f44336; }
+    .log .info { color: #888; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <h1>Processador de Escalas</h1>
+  <p class="subtitle">Gera CSV consolidado a partir dos arquivos de escala</p>
+
+  <div class="upload-area">
+    <label>Escala Padrão (escalaPadraoCorreto.txt)</label>
+    <input type="file" id="fileEscalaPadrao" accept=".txt,.TXT" />
+    <div class="file-status" id="statusPadrao">Nenhum arquivo selecionado</div>
+  </div>
+
+  <div class="upload-area">
+    <label>Escalinha (escalinha.TXT)</label>
+    <input type="file" id="fileEscalinha" accept=".txt,.TXT" />
+    <div class="file-status" id="statusEscalinha">Nenhum arquivo selecionado</div>
+  </div>
+
+  <button id="btnProcess" disabled>Processar e Baixar CSV</button>
+
+  <div class="log" id="log">Aguardando arquivos...</div>
+
+</div>
+
+<!-- Dependências -->
+<script src="settings.js"></script>
+<script src="engine.js"></script>
+<script>
+  let textPadrao   = null;
+  let textEscalinha = null;
+
+  const btnProcess       = document.getElementById('btnProcess');
+  const logEl            = document.getElementById('log');
+  const statusPadraoEl   = document.getElementById('statusPadrao');
+  const statusEscalinhaEl = document.getElementById('statusEscalinha');
+
+  function log(msg, type = 'info') {
+    const span = document.createElement('span');
+    span.className = type;
+    span.textContent = msg + '\n';
+    if (logEl.textContent === 'Aguardando arquivos...') logEl.textContent = '';
+    logEl.appendChild(span);
+    logEl.scrollTop = logEl.scrollHeight;
+  }
+
+  function checkReady() {
+    btnProcess.disabled = !(textPadrao && textEscalinha);
+  }
+
+  function readFile(input, onLoad, statusEl, label) {
+    input.addEventListener('change', () => {
+      const file = input.files[0];
+      if (!file) return;
+
+      statusEl.textContent = `Carregando: ${file.name}…`;
+      statusEl.className = 'file-status';
+
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        onLoad(e.target.result);
+        statusEl.textContent = `✓ ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+        statusEl.className = 'file-status loaded';
+        log(`[${label}] arquivo carregado — ${file.name}`, 'ok');
+        checkReady();
+      };
+      reader.onerror = () => {
+        statusEl.textContent = `✗ Erro ao ler o arquivo`;
+        statusEl.className = 'file-status error';
+        log(`[${label}] erro ao ler o arquivo`, 'err');
+      };
+      reader.readAsText(file, 'UTF-8');
+    });
+  }
+
+  readFile(
+    document.getElementById('fileEscalaPadrao'),
+    (text) => { textPadrao = text; },
+    statusPadraoEl,
+    'ESCALA PADRÃO'
+  );
+
+  readFile(
+    document.getElementById('fileEscalinha'),
+    (text) => { textEscalinha = text; },
+    statusEscalinhaEl,
+    'ESCALINHA'
+  );
+
+  btnProcess.addEventListener('click', () => {
+    try {
+      log('Iniciando processamento…', 'info');
+
+      const csv = processFiles(textPadrao, textEscalinha);
+      const lines = csv.split('\n');
+      const dataLines = lines.slice(1).filter(l => l.split(",").some(c => c.trim() !== ""));
+
+      // Contar status
+      let ok = 0, div = 0, inv = 0;
+      dataLines.forEach(l => {
+        if (l.includes(',OK,'))         ok++;
+        else if (l.includes(',DIVERGENTE,')) div++;
+        else if (l.includes(',INVERTIDO,'))  inv++;
+      });
+
+      log(`Registros processados: ${dataLines.length}`, 'info');
+      log(`  ✓ OK: ${ok}`, 'ok');
+      if (inv) log(`  ⚠ INVERTIDO: ${inv}`, 'warn');
+      if (div) log(`  ✗ DIVERGENTE: ${div}`, 'err');
+
+      // Download
+      const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' });
+      const url  = URL.createObjectURL(blob);
+      const a    = document.createElement('a');
+      a.href     = url;
+      a.download = `escala_consolidada_${today()}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+
+      log(`CSV gerado e download iniciado.`, 'ok');
+
+    } catch (err) {
+      log(`ERRO: ${err.message}`, 'err');
+      console.error(err);
+    }
+  });
+
+  function today() {
+    const d = new Date();
+    return `${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}`;
+  }
+</script>
+</body>
+</html>
