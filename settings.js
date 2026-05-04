@@ -18,8 +18,8 @@ const SETTINGS = {
       efetivo:     [54,  61],   // D - MOT 1
       folguista:   [68,  77],   // E - MOT 2
       servico:     [82,  89],   // F - TAB
-      horaInicial: [100, 105],  // G - INICIO (sobrescrito pelo escalinha)
-      horaFinal:   [124, 129],  // H - TERM   (sobrescrito pelo escalinha)
+      horaInicial: [99, 104],   // G - INICIO (sobrescrito pelo escalinha)
+      horaFinal:   [123, 128],  // H - TERM   (sobrescrito pelo escalinha)
     },
     // Linha que contém o cabeçalho (0-based); linhas antes dela são ignoradas
     headerLineMarker: 'Linha',
@@ -35,10 +35,10 @@ const SETTINGS = {
   escalinha: {
     columns: {
       carro:    [0,    8],   // número do veículo (pode ser vazio)
-      servico:  [10,  15],  // TAB (ex: 01A, 02C, NOT, R1_A)
-      entrada:  [16,  21],  // ENTRA - INICIO real
-      saida:    [22,  27],  // SAIDA - TERM real
-      regist:   [28,  34],  // matrícula do motorista
+      servico:  [9,   14],  // TAB (ex: 01A, 02C, NOT, R1_A)
+      entrada:  [15,  20],  // ENTRA - INICIO real
+      saida:    [21,  26],  // SAIDA - TERM real
+      regist:   [27,  33],  // matrícula do motorista
       apelido:  [35,  104],  // apelido
       localMot: [105,  130], // LOCAL MOT.
     },

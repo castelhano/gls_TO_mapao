@@ -214,14 +214,14 @@
 
       const csv = processFiles(textPadrao, textEscalinha);
       const lines = csv.split('\n');
-      const dataLines = lines.slice(1).filter(l => l.split(",").some(c => c.trim() !== ""));
+      const dataLines = lines.slice(1).filter(l => l.split(";").some(c => c.trim() !== ""));
 
       // Contar status
       let ok = 0, div = 0, inv = 0;
       dataLines.forEach(l => {
-        if (l.includes(',OK,'))         ok++;
-        else if (l.includes(',DIVERGENTE,')) div++;
-        else if (l.includes(',INVERTIDO,'))  inv++;
+        if (l.includes(';OK;'))         ok++;
+        else if (l.includes(';DIVERGENTE;')) div++;
+        else if (l.includes(';INVERTIDO;'))  inv++;
       });
 
       log(`Registros processados: ${dataLines.length}`, 'info');

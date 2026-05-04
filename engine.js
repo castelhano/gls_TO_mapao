@@ -234,7 +234,7 @@ function processFiles(escalaPadraoText, escalinhaText) {
   const totalCols = fixedCols.length + maxTabelas * repeatingCols.length;
   const blankRow  = Array(totalCols).fill('').join(',');
 
-  const csvLines = [headerParts.join(',')];
+  const csvLines = [headerParts.join(';')];
   let lastLinha  = null;
 
   for (const row of rows) {
@@ -243,7 +243,7 @@ function processFiles(escalaPadraoText, escalinhaText) {
     // Inserir linhas em branco ao mudar de grupo de linha
     if (lastLinha !== null && currentLinha !== lastLinha) {
       for (let g = 0; g < gapEntreLinhas; g++) {
-        csvLines.push(blankRow);
+        csvLines.push(blankRow.replace(/,/g, ';'));
       }
     }
     lastLinha = currentLinha;
@@ -268,7 +268,7 @@ function processFiles(escalaPadraoText, escalinhaText) {
       }
     }
 
-    csvLines.push(parts.join(','));
+    csvLines.push(parts.join(';'));
   }
 
   return csvLines.join('\n');
