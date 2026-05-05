@@ -47,8 +47,8 @@ function parseEscalaPadrao(text) {
     const horaInicial = extractField(rawLine, c.horaInicial[0], c.horaInicial[1]);
     const horaFinal   = extractField(rawLine, c.horaFinal[0],   c.horaFinal[1]);
 
-    // Linha precisa ter pelo menos Linha e Serviço
     if (!linha || !servico) continue;
+    if (SETTINGS.linhasIgnorar.includes(linha)) continue;
 
     records.push({ linha, frota, codEscala, efetivo, folguista, servico, horaInicial, horaFinal });
   }
@@ -82,10 +82,10 @@ function parseEscalinha(text) {
 
     // Detectar marcador de linha: "Linha :  206 - CPA 1 X CENTRO"
     if (trimmed.startsWith(cfg.linhaMarker)) {
-      // Extrai código da linha (antes do " - ")
       const afterColon = trimmed.replace(cfg.linhaMarker, '').trim();
       const dashIdx = afterColon.indexOf(' - ');
-      currentLinha = dashIdx !== -1 ? afterColon.substring(0, dashIdx).trim() : afterColon.trim();
+      const linhaDetectada = dashIdx !== -1 ? afterColon.substring(0, dashIdx).trim() : afterColon.trim();
+      currentLinha = SETTINGS.linhasIgnorar.includes(linhaDetectada) ? null : linhaDetectada;
       continue;
     }
 
@@ -124,19 +124,20 @@ function processFiles(escalaPadraoText, escalinhaText) {
   // Estrutura: Map<efetivo, { folguistas: Set, tabelas: [] }>
 
   const condutores = new Map();
+  let semEfetivoCounter = 0;
 
   for (const rec of padrao) {
-    if (!rec.efetivo) continue; // linhas sem matrícula efetiva ignoradas
+    const condutorKey = rec.efetivo || `__sem_efetivo_${semEfetivoCounter++}`;
 
-    if (!condutores.has(rec.efetivo)) {
-      condutores.set(rec.efetivo, {
+    if (!condutores.has(condutorKey)) {
+      condutores.set(condutorKey, {
         efetivo: rec.efetivo,
         tabelasFolguistas: [], // [{ folguista, servico, linha }]
         tabelas: [],           // [{ frota, linha, tab, inicio, term, folguista }]
       });
     }
 
-    const condutor = condutores.get(rec.efetivo);
+    const condutor = condutores.get(condutorKey);
 
     // Buscar horários no escalinha
     const key = `${rec.linha}|${rec.servico}`;
@@ -164,7 +165,8 @@ function processFiles(escalaPadraoText, escalinhaText) {
 
   const rows = [];
 
-  for (const [efetivo, condutor] of condutores) {
+  for (const [, condutor] of condutores) {
+    const efetivo = condutor.efetivo;
     const folguistas = condutor.tabelasFolguistas.map(t => t.folguista).filter(Boolean);
 
     // Conjunto único de folguistas
@@ -194,7 +196,7 @@ function processFiles(escalaPadraoText, escalinhaText) {
 
     // Verificar INVERTIDO: o efetivo e folguista trocaram de posição em algum par
     // Só verifica se status ainda é OK
-    if (status === SETTINGS.output.status.OK && mot2) {
+    if (status === SETTINGS.output.status.OK && mot2 && efetivo) {
       // Verificar se mot2 aparece como efetivo com mot1 como folguista
       const invertido = condutores.has(mot2) &&
         condutores.get(mot2).tabelasFolguistas.some(t => t.folguista === efetivo);

@@ -12,7 +12,7 @@ const SETTINGS = {
   escalaPadrao: {
     // Intervalos de caracteres [inicio, fim] para cada coluna (trim será aplicado)
     columns: {
-      linha:       [9,   14],   // A
+      linha:       [7,   14],   // A
       frota:       [20,  27],   // B
       codEscala:   [36,  47],   // C
       efetivo:     [54,  61],   // D - MOT 1
@@ -57,6 +57,9 @@ const SETTINGS = {
     ],
     skipEmpty: true,
   },
+
+  // ─── Linhas a ignorar completamente na consolidação e no CSV de saída ────────
+  linhasIgnorar: ['445'],
 
   // ─── Colunas de saída do CSV ───────────────────────────────────────────────
   output: {
